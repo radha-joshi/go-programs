@@ -36,6 +36,21 @@
 
 * Should know what is Go Roadmap and take responsibility of learning
 
+## Creational Patterns
+
+* Singleton
+* Factory Method
+* Abstract Factory
+* Builder
+* Prototype
+
+## Structural Patterns
+
+* Adapter
+* Decorator
+* Composite
+* Flyweight
+
 ## References
 
 * [Refactoring Guru Design Patterns](https://refactoring.guru/design-patterns)

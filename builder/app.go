@@ -10,11 +10,17 @@ import (
 type Application struct{}
 
 func (a *Application) Start() {
-	builder := person.PersonBuilder{}
-	person := builder.
+	builder := person.NewBuilder()
+	person1 := builder.
 		WithName("Acharya").
 		WithCity("Nagpur").
 		WithDesignation("Teacher").
 		Build()
-	log.Info().Msg(fmt.Sprintf("Person: %v", person))
+	log.Info().Msg(fmt.Sprintf("Person: %v", person1))
+
+	person1 = person.NewBuilder().
+		WithCity("Raipur").
+		WithName("Bachchan").
+		Build()
+	log.Info().Msg(fmt.Sprintf("Person: %v", person1))
 }
