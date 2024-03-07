@@ -1,4 +1,4 @@
-module company.com/prototype
+module company.com/bridge
 
 go 1.22.0
 
