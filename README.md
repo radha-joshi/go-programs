@@ -50,9 +50,13 @@
 * Decorator
 * Composite
 * Flyweight
+* Bridge
+* Facade
+* Proxy
 
 ## References
 
 * [Refactoring Guru Design Patterns](https://refactoring.guru/design-patterns)
 * [Go Developer Roadmap](https://roadmap.sh/golang)
 * [Go Style Guide](https://google.github.io/styleguide/go/)
+* [Design Patterns Workshop Manual](https://github.com/tusharjoshi/design-patterns-workshop/releases/download/0.2/design-patterns-workshop.pdf)
