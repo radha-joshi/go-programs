@@ -51,8 +51,21 @@
 * Composite
 * Flyweight
 * Bridge
-* Facade
 * Proxy
+* Facade
+
+## Behavioural Patterns
+
+* Chain of responsibility
+* Command
+* Iterator
+* Mediator
+* Memento
+* Observer
+* State
+* Strategy
+* Template Method
+* Visitor
 
 ## References
 
