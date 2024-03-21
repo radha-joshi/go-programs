@@ -1,5 +1,9 @@
 package main
 
+// func main() {
+// 	(&Application{}).Start()
+// }
+
 func main() {
-	(&Application{}).Start()
+	(&StateApplication{}).Start()
 }
