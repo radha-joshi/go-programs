@@ -1,0 +1,10 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "disabled",
+    "go.goroot": "",
+    "gopls": {
+        "ui.diagnostic.analyses": {
+            "loopclosure": false
+        },
+    },
+}

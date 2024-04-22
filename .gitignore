@@ -1,0 +1,27 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Ruby specific
+vendor/
+manual/Gemfile.lock
+
+# IDE specific
+bin/
+.classpath
+.project
+.settings/
+
+# macOs specific
+.DS_Store
+
+# adds .vscode folder to ignored files
+.vscode/**/*
+
+# exclude these files from being ignored
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json

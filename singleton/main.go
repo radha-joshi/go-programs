@@ -25,13 +25,13 @@ func process(index int) {
 }
 
 func main() {
-	wg := sync.WaitGroup{}
+	waitGroup := sync.WaitGroup{}
 	for i := 0; i < 5; i++ {
-		wg.Add(1)
+		waitGroup.Add(1)
 		go func() {
-			defer wg.Done()
+			defer waitGroup.Done()
 			process(i)
 		}()
 	}
-	wg.Wait()
+	waitGroup.Wait()
 }
