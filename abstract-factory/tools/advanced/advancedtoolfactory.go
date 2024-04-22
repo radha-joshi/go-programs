@@ -13,13 +13,13 @@ func (f *advancedToolFactory) CreateButton(buttonType string) tools.Button {
 
 func (f *advancedToolFactory) CreateMenu(menuType string) tools.Menu {
 	return &AdvancedMenu{
-		name: "AdvancedButton",
+		name: "AdvancedMenu",
 	}
 }
 
 func (f *advancedToolFactory) CreateLabel(labelType string) tools.Label {
 	return &AdvancedLabel{
-		name: "AdvancedButton",
+		name: "AdvancedLabel",
 	}
 }
 

@@ -31,6 +31,7 @@
 
 * Go to document for conventions - to become gofer
 * When interface has single method name of interface is chosen to be verb with `er` and ending
+* Effective Go
 
 ## Go Developer
 
