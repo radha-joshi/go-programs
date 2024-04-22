@@ -23,4 +23,15 @@ func (a *Application) Start() {
 		WithName("Bachchan").
 		Build()
 	log.Info().Msg(fmt.Sprintf("Person: %v", person1))
+
+	city := ""
+
+	person2Builder := person.NewBuilder()
+	if city != "" {
+		person2Builder.WithCity(city)
+	}
+	person2 := person2Builder.
+		WithName("Bachchan").
+		Build()
+	log.Info().Msg(fmt.Sprintf("Person: %v", person2))
 }
