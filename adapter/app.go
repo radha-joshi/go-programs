@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"company.com/adapter/vertexes"
 	"github.com/rs/zerolog/log"
 )
@@ -12,6 +14,26 @@ type Coordinate interface {
 	Y() float32
 }
 
+type coordinate struct {
+	x float32
+	y float32
+}
+
+func (c *coordinate) X() float32 {
+	return c.x
+}
+
+func (c *coordinate) Y() float32 {
+	return c.y
+}
+
+func NewCoordinate(x float32, y float32) Coordinate {
+	return &coordinate{
+		x: x,
+		y: y,
+	}
+}
+
 type Polyline struct {
 	pointList []Coordinate
 }
@@ -20,6 +42,10 @@ func NewPolyline() *Polyline {
 	return &Polyline{
 		pointList: make([]Coordinate, 0),
 	}
+}
+
+func (p *Polyline) AddCoordinate(c Coordinate) {
+	p.pointList = append(p.pointList, c)
 }
 
 type PolygonAdaptor struct {
@@ -44,8 +70,12 @@ func (a *Application) Start() {
 	log.Info().Msg("Application started.")
 
 	p := NewPolyline()
+	p.AddCoordinate(NewCoordinate(1.0, 2.0))
+	p.AddCoordinate(NewCoordinate(2.0, 5.0))
+	p.AddCoordinate(NewCoordinate(4.0, 8.0))
 
 	polygonAdapter := NewPolygonAdaptor(p)
 
-	vertexes.CalculateDistances(polygonAdapter)
+	distance := vertexes.CalculateDistance(polygonAdapter)
+	log.Info().Msg(fmt.Sprintf("Distance is %v", distance))
 }

@@ -30,7 +30,9 @@ func NewPolygon() Polygon {
 	}
 }
 
-func CalculateDistances(polygon Polygon) int64 {
+func CalculateDistance(polygon Polygon) int64 {
 	log.Info().Msg("calculateDistance worked")
-	return 0
+	// Actual logic will be complicated to calculate distance
+	// This is sample return value
+	return int64(polygon.GetCount()) * 100
 }
