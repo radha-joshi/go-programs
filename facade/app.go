@@ -18,7 +18,9 @@ func (a *Application) Start() {
 	var bank banking.Bank = banking.Bank{}
 	var locker locker.Locker = locker.Locker{}
 
-	var financeOps *finance.FinStorageFacade = finance.NewFinStorageFacade(&bank)
+	var financeOps *finance.FinStorageFacade
+
+	financeOps = finance.NewFinStorageFacade(&bank)
 
 	financeOps.StoreAmount(&account, 23.8)
 
