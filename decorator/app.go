@@ -36,15 +36,15 @@ type Application struct{}
 
 func (a *Application) Start() {
 	log.Info().Msg("Application started.")
-	display("Some Text")
-	displayWithQuotes("Some Text")
+	display("display")
+	displayWithQuotes("displayWithQuotes")
 
 	logDisplay := logDecorator(display)
-	logDisplay("Some Text Again")
+	logDisplay("logDisplay")
 
 	logDisplayWithQuotes := logDecorator(displayWithQuotes)
-	logDisplayWithQuotes("Some Text Again")
+	logDisplayWithQuotes("logDisplayWithQuotes")
 
 	displayWithDecorators := lineDecorator(logDecorator(display))
-	displayWithDecorators("Checkin the decorators")
+	displayWithDecorators("displayWithDecorators")
 }

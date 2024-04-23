@@ -14,13 +14,13 @@ func (a *Application) Start() {
 	editor := Editor{}
 
 	editor.AddText("AAAAAAA", "BOLD", 10, "RED")
-	editor.AddText("BBBBB", "BOLD", 10, "RED")
+	editor.AddText("BBBBB", "BOLD", 14, "RED")
 	editor.AddText("CCCCCC", "NORMAL", 10, "RED")
 	editor.AddText("DDDDD", "BOLD", 10, "RED")
-	editor.AddText("eEEEEE", "BOLD", 10, "RED")
+	editor.AddText("eEEEEE", "BOLD", 8, "RED")
 	editor.AddText("FFFFF", "BOLD", 11, "RED")
 	editor.AddText("GGGGG", "BOLD", 10, "BLUE")
-	editor.AddText("HHHHH", "BOLD", 10, "RED")
+	editor.AddText("HHHHH", "BOLD", 9, "RED")
 
 	fmt.Println(&editor)
 }
