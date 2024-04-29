@@ -24,7 +24,7 @@ func (a *Application) Start() {
 	folder1.AddComponent(NewFile("File2"))
 
 	folder2 := NewFolder("Folder2")
-	folder1.AddComponent(NewFile("File3"))
+	folder2.AddComponent(NewFile("File3"))
 	folder2.AddComponent(folder1)
 
 	folder2.Accept(visitor)
